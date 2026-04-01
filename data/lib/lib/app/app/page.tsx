@@ -1,28 +1,60 @@
-export default function Home() {
+export default function HomePage() {
   return (
-    <main style={{
-      padding: 40, maxWidth: 800, margin: '0 auto',
-      fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif'
-    }}>
-      <h1 style={{ color: '#0066cc', marginBottom: 20 }}>
-        📱 手机市场新闻聚合
-      </h1>
-      <div style={{ background: 'white', padding: 30, borderRadius: 12, boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}>
-        <h3>✅ 部署成功！</h3>
-        <p><strong>网站功能正常</strong></p>
-        <ul>
-          <li>Next.js 14 完美运行</li>
-          <li>Vercel serverless 环境 OK</li>
-          <li>下一步添加 RSS 抓取</li>
-        </ul>
-        <div style={{ marginTop: 20, padding: 20, background: '#f0f8ff', borderRadius: 8 }}>
-          <p><strong>测试新闻：</strong></p>
-          <div style={{ margin: 10, padding: 15, border: '1px solid #ddd', borderRadius: 6 }}>
-            <strong>华为新机曝光</strong><br/>
-            IT之家 • 刚刚
+    <html>
+      <head>
+        <title>手机新闻 - Cindy</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
+      <body style={{
+        margin: 0,
+        padding: 0,
+        fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
+        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        minHeight: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
+      }}>
+        <div style={{
+          background: 'rgba(255,255,255,0.95)',
+          padding: '60px 40px',
+          borderRadius: '24px',
+          boxShadow: '0 25px 50px rgba(0,0,0,0.15)',
+          maxWidth: '600px',
+          textAlign: 'center',
+          backdropFilter: 'blur(10px)'
+        }}>
+          <h1 style={{
+            fontSize: '2.8em',
+            background: 'linear-gradient(45deg, #ff6b6b, #4ecdc4)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            margin: '0 0 20px 0',
+            fontWeight: 800
+          }}>
+            📱 手机新闻
+          </h1>
+          
+          <div style={{
+            background: 'white',
+            padding: '30px',
+            borderRadius: '16px',
+            boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
+            marginBottom: '30px'
+          }}>
+            <h3 style={{ color: '#333', marginBottom: 15 }}>✅ 部署成功！</h3>
+            <p style={{ color: '#666', lineHeight: 1.6 }}>
+              <strong>cindyhu198810</strong> 的<br/>
+              Next.js + Vercel 手机新闻聚合器
+            </p>
+          </div>
+          
+          <div style={{ fontSize: '0.95em', color: '#888' }}>
+            <p>步骤1完成：基础环境正常</p>
+            <p>下一步：RSS抓取 + 定时任务</p>
           </div>
         </div>
-      </div>
-    </main>
+      </body>
+    </html>
   );
 }
