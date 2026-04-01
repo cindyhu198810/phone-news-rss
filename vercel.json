@@ -1,16 +1,1 @@
-{
-  "crons": [
-    {
-      "path": "/api/cron",
-      "schedule": "0 2 * * *"
-    }
-  ]
-}
-文件4：.gitignore
-text
-node_modules
-.next
-.env.local
-.vercel
-data/
-.DS_Store
+
